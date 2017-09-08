@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>task</title>
+    <script src="https://unpkg.com/a-table@1.4.10/build/a-table.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/a-table@1.4.10/css/a-table.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/a-table@1.4.10/fonts/a-table-icon.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  </head>
+  <body >
+    <table class="table">
+	<tr>
+		<th>ФИО</th>
+		<th>Сайт</th>
+	</tr>
+</table>
+    <script>
+
+    var names = [
+      'Александрова Александра Романовна'  ,
+ 'Аль-Ради Ася Сергеевна'     ,
+ 'Бондарь Софья Дмитриевна ' ,
+ 'Василовская Александра Николаевна',
+
+ 'Воробьева Светлана Валерьевна', 'Генне Евгения Станиславовна',
+ 'Гордзей Карина Евгеньевна' ,
+ 'Довнар Элла Александровна'  ,
+ 'Калкили Мария Рибхи',
+ 'Ключникова Диана Александровна ' ,
+ 'Козырева Залина Владимировна '  ,
+ 'Коржавина Анастасия Максимовна ' ,
+ 'Кускова Варвара Дмитриевна  '   ,
+ 'Леонтьева Алина Юрьевна  '  ,
+ 'Новоселова Татьяна Сергеевна ' ,
+ 'Ожиганова Юлия Дмитриевна ' ,
+ 'Осипова Светлана Михайловна',
+ 'Побегаева София Александровна ' ,
+ 'Терехин Никита Максимович  ' ,
+ 'Шевченко София Валерьевна ' ,
+ 'Шмырева Ольга Николаевна'
+    ]
+
+    var sites = [
+      'http://prorospis.pro/',
+      'http://cottege70.ru/',
+      'http://xn--80aaanpfjb8a3bn.xn--90ais/',
+      'http://xn--8-htbdymy.xn--p1ai/',
+      'http://xn--i1ajfdf1a.xn--p1ai/',
+      'http://novolights.ru/',
+      'https://uniquecar.ru/',
+      'http://kernile.ru/',
+      'https://www.fannabee.com/',
+      'http://gromovbar.ru/',
+      'http://koreana-spb.ru/',
+      'http://phuket-marbella.com/ru',
+      'http://xn--b1afjteffjd.xn--p1ai/#Наша-задача',
+      'http://www.dk-spb.ru/',
+      'http://www.arbidol.ru/',
+      'https://saivena.com/',
+      'http://bulgariadom.com/',
+      'http://1586.xn--p1ai/',
+      'https://une-com.ru/',
+      'http://salamanca.camp/',
+      'http://smokemoscow.ru/',
+      'http://michaelstudioo.com/',
+      'http://sk-hotels.com/'
+    ]
+
+    while (names.length) {
+
+      var n = names.splice(0,1);
+      var s = sites.splice(0,1);
+      $('.table').append(`
+        <tr>
+          <td>${n}</td>
+          <td>${s}</td>
+        </tr>
+      `)
+    }
+
+
+
+
+    var table = new aTable('.table', {
+      lang:'ru'
+    });
+
+
+    </script>
+  </body>
+</html>
