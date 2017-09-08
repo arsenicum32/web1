@@ -1,0 +1,143 @@
+.blck
+  div
+    h1 шрифты в web
+    p#mytimer
+  
+.blck
+  h2 общие понятия: 
+  p растровый файл / векторный файл
+    br
+    | кодировка 
+    br
+    |размер файла (метр = 1МБ)
+    br
+    |сжатие GZIP 
+    br
+    |глиф (в этимологии web – один символ)
+    br
+    |гарнитура – класс шрифтов
+    br
+    |хинтинг – изменение контура шрифта при растеризации (определяет ПО)
+    br
+    | кеш (браузера)
+    br
+    | &amp;nbsp;
+    br
+    | экранирование
+.blck
+  h2 форматы шрифта
+.blck
+  h2 есть truetype
+    br
+    b .ttf
+    br
+    b .tte
+    br
+    b .dfont
+.blck
+  h2 есть opentype
+    br
+    b .oft (postscript)
+    br
+    b .ttf (opentype)
+.blck
+  h2 есть архиваторы шрифтов
+    br
+    b .woff
+    br
+    b .woff2
+    br
+    b .eot
+.blck
+  h2 другие:
+    br
+    b .svg
+
+.blck
+  h2 типы лицензий
+  ul
+    li apache 
+    li FreeBSD
+    li Unlicense
+    li MIT
+    li etc *)
+.blck
+  div
+    h2 desktop / web
+    a(href="https://spark.ru/startup/bilalovpro/blog/13918/platnie-i-besplatnie-shrifti-kak-ispolzovat-chtobi-ne-narushit-litsenziyu") вот
+.blck
+  h2 что происходит?
+.blck
+  div
+    h3 Генераторы шрифтов
+    
+    b http://www.font2web.com/
+    br
+    b https://transfonter.org/
+
+     h3 Чем грозит нелегальное использование шрифтов?
+     p Если в коммерческих интересах:
+     p Ничем, вплоть до судебного иска. Административка.
+     h3 Что ещё важно знать? 
+     p Пользовательское данные как собирать, как делать кассу на сайтах
+
+
+.blck
+  h2 Откуда брать шрифты
+.blck
+  h2 Откуда брать шрифты, если ты студент
+  a(href="https://type.today/ru/kazimir" ) !
+.blck
+  div
+    h3 апсторы шрифтов: 
+    p https://fonts.google.com
+    p https://edgewebfonts.adobe.com/
+    p typekit
+    p https://www.fonts.com/
+    h3 github
+.blck
+  div
+    h2 экранирование
+    #d(ng-app="")
+      input(type="text",ng-model="name")
+      p {{name}}
+      div(ng-bind-html="name")
+.blck
+  h2 Качественный набор
+.blck
+  div
+    a(href="http://mdash.ru") mdash.ru
+    br
+    a(href="https://typograf.github.io/#!text=") молодцы ребята!
+    br
+    a(href="http://www.typograf.ru/") бэ
+    br
+    a(href="https://www.artlebedev.ru/typograf/") ну и лебедев
+.blck
+  h2 Как происходит загрузка шрифтов
+.blck
+  h2 Полезные инструменты
+.blck
+  div
+   p Хранилища шрифтов:
+   b https://github.com/typekit/webfontloader
+   p Генераторы шрифтов (для оптимизации): 
+   b https://www.fontsquirrel.com/tools/webfont-generator
+   b http://eotfast.com/ 
+   p Проверка скорости загрузки шрифтов: 
+   b https://developers.google.com/fonts/docs/webfont_loader
+   p полновесный редактор шрифтов со всевозможными конфигурируемыми вкусностями на стороне сервера. Открытый исходный код.
+   a(href="http://fontforge.github.io/en-US/") клик
+   p ttf2eot это предшественник EOTFAST. Он создает несжатые «легкие» EOT-файлы.
+   a(href="https://github.com/wget/ttf2eot") клик
+   p если очень хочется создать шрифт 
+   b https://www.fontlab.com/
+
+.blck
+  div
+    h2 Задание
+    p скачать этот сайт
+    a(href='http://penchat.me/web1') сайт
+    p и поменять ему шрифт на hack 
+    a(href='https://github.com/source-foundry/Hack') hack
+    a#b(href="#") go

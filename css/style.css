@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  height: 100vw;
+  font-family: 'Helvetica Neue';
+}
+input {
+  border: none;
+  font-size: 1.2em;
+  background: #fff;
+  padding: 5px;
+  color: #00f;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #00f;
+}
+.blck {
+  width: 90vw;
+  height: 100vh;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 10vw;
+}
+.blck:nth-child(even) {
+  background: #fff;
+}

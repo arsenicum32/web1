@@ -1,0 +1,26 @@
+body
+  margin 0
+  height 100vw
+  font-family 'Helvetica Neue'
+input
+  border none
+  font-size 1.2em
+  background white
+  padding 5px
+  color blue
+  outline none
+a
+  text-decoration none
+  font-weight bolder
+  color blue
+.blck
+  width 90vw
+  height 100vh
+  background #ededed
+  display flex
+  align-items center
+  justify-content flex-start
+  flex-wrap wrap
+  padding-left 10vw
+  &:nth-child(even)
+    background white
